@@ -1,1 +1,1 @@
-# angular-graphql
+# Angular graphql
