@@ -1,0 +1,16 @@
+type Query {
+    todos: [Todo]
+    todo(id: ID!): Todo
+    tabs: [Tab]
+}
+
+type Todo {
+    id: ID!
+    name: String
+    isReady: Boolean
+}
+
+type Tab {
+    id: ID!
+    name: String
+}
