@@ -1,4 +1,5 @@
 .idea
+.env
 .DS_Store
 # Logs
 logs
@@ -71,7 +72,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+server/.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
