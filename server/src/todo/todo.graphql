@@ -5,12 +5,28 @@ type Query {
 }
 
 type Todo {
-    id: ID!
+    _id: ID!
     name: String
     isReady: Boolean
 }
 
 type Tab {
-    id: ID!
+    _id: ID!
     name: String
+}
+
+type Mutation {
+    createTodo(todo: CreateTodoInput!): Todo
+    deleteTodo(id: ID!): Boolean
+    updateTodo(id: ID!, todo: UpdateTodoInput): Todo
+}
+
+input CreateTodoInput {
+    name: String!
+    isReady: Boolean!
+}
+
+input UpdateTodoInput {
+    name: String
+    isReady: Boolean
 }

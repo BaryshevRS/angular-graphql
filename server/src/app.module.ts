@@ -10,7 +10,7 @@ import 'dotenv/config.js';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@mongocloud.4sqqe.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
+      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@mongocloud.4sqqe.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
     ),
     GraphQLModule.forRoot({
     typePaths: ['**/*.graphql'],
