@@ -1,1 +1,3 @@
-# Angular graphql
+# Todo с Angular и Graphql
+
+Пример Todo в процессе разработки. Пока реализован только сервер.
